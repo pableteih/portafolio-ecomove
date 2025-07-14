@@ -71,6 +71,10 @@ body {
     height: 70px;
 }
 
+.nav-logo {
+    padding-left: 2rem;
+}
+
 .nav-logo span {
     font-size: 1.5rem;
     font-weight: 700;
@@ -372,6 +376,12 @@ body {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     font-weight: 500;
+}
+
+.hero-content{
+    padding-left: 3rem;
+
+
 }
 
 .hero-description {
@@ -695,6 +705,78 @@ section {
 
 .step-content p {
     color: var(--text-secondary);
+}
+
+/* App Screens Section */
+.app-screens {
+    background: var(--background-primary);
+    padding: 5rem 0;
+}
+
+.screens-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.screen-item {
+    background: var(--background-card);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 210, 255, 0.1);
+}
+
+.screen-item:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-heavy);
+    border-color: rgba(0, 210, 255, 0.3);
+}
+
+.screen-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 9/16;
+    background: var(--background-secondary);
+}
+
+.screen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.screen-item:hover .screen-image img {
+    transform: scale(1.05);
+}
+
+.screen-info {
+    padding: 2rem;
+}
+
+.screen-info h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.screen-info p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Responsive para pantallas de app */
+@media (max-width: 768px) {
+    .screens-gallery {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .screen-image {
+        aspect-ratio: 3/4;
+    }
 }
 
 /* Skills Section */
