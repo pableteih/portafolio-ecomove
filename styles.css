@@ -1,3 +1,95 @@
+/* Footer Styles */
+.site-footer {
+    background: #181a1b;
+    color: #fff;
+    padding: 2rem 0 1.2rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #222;
+}
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+}
+.footer-link {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.footer-link:hover {
+    color: #00bfff;
+}
+.footer-separator {
+    color: #888;
+    font-size: 1.2em;
+}
+.footer-name {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.footer-year {
+    font-size: 1em;
+    color: #aaa;
+}
+/* Carousel Section */
+.tech-carousel-section {
+    background: transparent;
+    padding: 2rem 0 1rem 0;
+    overflow: hidden;
+}
+.carousel-container {
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.tech-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 4em;
+    display: flex;
+    align-items: center;
+}
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: carousel-scroll 30s linear infinite;
+    align-items: center;
+}
+.carousel-item {
+    flex: 0 0 auto;
+    width: 4.5em;
+    height: 4.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #fff;
+    margin: 0 1.5em;
+    opacity: 0.97;
+    transition: transform 0.2s;
+}
+.carousel-item img {
+    max-width: 2em;
+    max-height: 2em;
+    display: block;
+}
+.carousel-item:hover {
+    transform: scale(1.18);
+    opacity: 1;
+}
+@keyframes carousel-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
 /* Reset y configuración base */
 * {
     margin: 0;
@@ -586,6 +678,21 @@ section {
     color: var(--text-primary);
 }
 
+/* Subtítulos y descripciones en blanco */
+.section-subtitle,
+.hero-description,
+.about-text p,
+.company-name,
+.education-details p,
+.skills-list .skill-tag,
+.contact-item h4,
+.contact-item a,
+.form-group input,
+.form-group textarea {
+    color: #fff !important;
+    display: inline-block;
+    margin-bottom: 0.7em;
+}
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
