@@ -887,17 +887,17 @@ body {
 }
 .card-1 {
     top: 10px;
-    left: 200px;
+    left: 130px;
     animation: float-card-1 5.2s ease-in-out infinite;
 }
 .card-2 {
     top: 130px;
-    left: 390px;
+    left: 320px;
     animation: float-card-2 4.7s ease-in-out infinite;
 }
 .card-3 {
     top: 220px;
-    left: 280px;
+    left: 210px;
     animation: float-card-3 5.5s ease-in-out infinite;
 }
 }
